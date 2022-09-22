@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio06</title>
+</head>
+<body>
+    <script>
+        const numtotaleleitores = Number(prompt("Número total de eleitores: "))
+        const votosbranco = Number(prompt("Número de votos em branco: "))
+        const votosnulos = Number(prompt("Número de votos nulos: "))
+        const votosvalidos = Number(prompt("Número de votos válidos: "))
+        const calbranco = numtotaleleitores * votosbranco / 100
+        const calnulo = numtotaleleitores * votosnulos / 100
+        const calvalidos = numtotaleleitores * votosvalidos / 100
+        
+        alert(`Total de votos: ${calbranco}% Brancos\nTotal de votos: ${calnulo}% Nulos\nTotal de votos: ${calvalidos}% Válidos`)
+    </script>
+    
